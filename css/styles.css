@@ -1,3 +1,19 @@
+/* CSS Variables */
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #ffffff;
+    --dairy: #fcfcfc;
+}
+
 /* Global reset for headings, paragraphs and lists */
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -22,9 +38,13 @@ body {
     background-color: #FFFFFF;
 }
 
+img {
+    display: block;
+}
+
 /* Container helper class */
 .container {
-    max-width: 1158px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -140,7 +160,7 @@ header {
 }
 
 .button {
-    background-color: #4d5ae5;
+    background-color: var(--iris, #4d5ae5);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -152,6 +172,9 @@ header {
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
 }
 
 .button:hover, .button:focus {
